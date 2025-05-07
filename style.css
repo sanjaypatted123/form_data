@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Common form section styling */
+  #loginpage,
+  #step1,
+  #step2,
+  #step3 {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+    margin: 30px auto;
+    display: none; /* Default hidden, show via JS */
+  }
+  
+  /* Initially show login only */
+  #loginpage {
+    display: block;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="date"],
+  input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 10px 5px 0 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive improvements */
+  @media (max-width: 480px) {
+    #loginpage,
+    #step1,
+    #step2,
+    #step3 {
+      padding: 15px;
+    }
+  
+    input, button {
+      font-size: 16px;
+    }
+  }
+  
