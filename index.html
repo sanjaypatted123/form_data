@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-data</title>
+</head>
+<body>
+    <!--step 0 only building the parts of html code-->
+    <div id="loginpage">
+        <h2>Login Page:</h2>
+        <input type="text" id="loginuser" placeholder="Enter the username" />
+        <input type="password" id="loginpassword" placeholder="Enter the password" />
+        <button id="loginBtn">Login</button>
+      </div>
+    <!--step 1 basic info collection-->
+    <div id="step1">
+        <h2>Basic Info Page:</h2>
+        <input type="text" id="username" placeholder="Enter your username" />
+        <input type="number" id="contact_no" placeholder="Enter your contact number" />
+        <input type="date" id="dob" />
+        <input type="text" id="address" placeholder="Enter your address" />
+        <input type="file" id="profileimg" accept="image/*" />
+        <button id="nextToStep2">Next</button>
+      </div>
+    <!--step 2 family and emergency input-->
+    <div id="step2">
+        <h2>Family and Emergency details:</h2>
+        <input type="text" id="family" placeholder="Family member" />
+        <input type="text" id="emergency_no" placeholder="Emergency number" />
+        <button id="backToStep1">Previous</button>
+        <button id="nextToStep3">Next</button>
+      </div>
+    <!--step 3 occupation and documents-->
+    <div id="step3">
+        <h2>Occupation and Documents page:</h2>
+        <input type="text" id="occupation" placeholder="Enter your occupation" />
+        <input type="number" id="experience" placeholder="Enter your experience (years)" />
+        <input type="number" id="graduation" placeholder="Enter your graduation year" />
+        <input type="file" id="documents" multiple />
+        <button id="backToStep2">Previous</button>
+        <button id="submitbtn">Submit</button>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>

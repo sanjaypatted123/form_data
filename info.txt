@@ -1,0 +1,26 @@
+
+Assignment flow of creation
+
+Step0:
+-Created two inputs and button
+
+
+step1:
+-create inputs
+	1.username
+	2.contact no
+	3.dob
+	4.address
+	5.image insert(type=‘file’  condition=only image types i.e image/*)
+
+
+    other accept types in file input type:
+    video/*
+    audio/*
+
+
+    step2:
+    family details
+
+    step3:
+    occupation and graduation also documents upload
