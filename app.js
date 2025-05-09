@@ -19,10 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('loginBtn').onclick = function () {
     const user = document.getElementById('loginuser').value;
     const pass = document.getElementById('loginpassword').value;
+    showStepById('step1')
     if (user && pass) {
       showStepById('step1');
     } else {
-      alert("Enter login credentials");
+      // alert("Enter login credentials");
     }
   };
   //here step1 to step2
@@ -32,6 +33,23 @@ document.addEventListener('DOMContentLoaded', function () {
     formData.dob = document.getElementById('dob').value;
     formData.address = document.getElementById('address').value;
     formData.profileImg = document.getElementById('profileimg').files[0];
+    // let uname=document.getElementById('username');
+    console.log(username.placeholder)
+    if(username.value!=''){
+      showStepById('step2');
+
+      // alert('enter correct name without space');
+      
+    }else{
+      alert('enter correct value');
+    }
+
+    
+    
+    
+    
+
+
     showStepById('step2');
   };
   //back to step1
